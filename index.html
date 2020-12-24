@@ -32,15 +32,15 @@
     // Import needed modules to load XKT models
     //------------------------------------------------------------------------------------------------------------------
 
-    import {Viewer} from "../src/viewer/Viewer.js";
-    import {XKTLoaderPlugin} from "../src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js";
+    import {Viewer} from "src/viewer/Viewer.js";
+    import {XKTLoaderPlugin} from "src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js";
 
     // TEST TEXTURE LOADING
-    import {Mesh} from "../src/viewer/scene/mesh/Mesh.js";
-    import {buildTorusGeometry} from "../src/viewer/scene/geometry/builders/buildTorusGeometry.js";
-    import {ReadableGeometry} from "../src/viewer/scene/geometry/ReadableGeometry.js";
-    import {PhongMaterial} from "../src/viewer/scene/materials/PhongMaterial.js";
-    import {Texture} from "../src/viewer/scene/materials/Texture.js";
+    import {Mesh} from "src/viewer/scene/mesh/Mesh.js";
+    import {buildTorusGeometry} from "src/viewer/scene/geometry/builders/buildTorusGeometry.js";
+    import {ReadableGeometry} from "src/viewer/scene/geometry/ReadableGeometry.js";
+    import {PhongMaterial} from "src/viewer/scene/materials/PhongMaterial.js";
+    import {Texture} from "src/viewer/scene/materials/Texture.js";
     // END TEST 
 
     //------------------------------------------------------------------------------------------------------------------
@@ -72,8 +72,8 @@
 
     const mck1 = xktLoader.load({
         id: "myModel",
-        src: "./models/Mck01.xkt",
-        metaModelSrc: "./models/Mck01.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
+        src: "models/Mck01.xkt",
+        metaModelSrc: "models/Mck01.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
         position: [0, 0, 0],
         edges: true
     });
@@ -84,24 +84,24 @@
 
     const mck2 = xktLoader.load({
         id: "myModel2",
-        src: "./models/Mck02.xkt",
-        metaModelSrc: "./models/Mck02.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
+        src: "models/Mck02.xkt",
+        metaModelSrc: "models/Mck02.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
         position: [-0.3, 6, -6.65], // adjust the position of floor 2 to fit on top of floor 1
         edges: true
     });
 
     const mck3 = xktLoader.load({
         id: "myModel3",
-        src: "./models/Mck03.xkt",
-        metaModelSrc: "./models/Mck03.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
+        src: "models/Mck03.xkt",
+        metaModelSrc: "models/Mck03.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
         position: [-14, 12, 9.35], // adjust the position of floor 3 to fit on top of floor 1
         edges: true
     });
 
     const mck4 = xktLoader.load({
         id: "myModel4",
-        src: "./models/Mck04.xkt",
-        metaModelSrc: "./models/Mck04.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
+        src: "models/Mck04.xkt",
+        metaModelSrc: "models/Mck04.json", // Creates a MetaObject instances in scene.metaScene.metaObjects
         position: [-14, 18, 1], // adjust the position of floor 4 to fit on top of floor 1
         edges: true
     });
